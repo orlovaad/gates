@@ -1,0 +1,120 @@
+.statistic-block {
+  margin-top: 50px;
+}
+
+.statistic-element {
+  display: grid;
+  grid-template-columns: 12% 2fr 2fr;
+  margin-bottom: 14px;
+  max-width: 700px;
+  border-bottom: 10px #eff1f4;
+}
+
+.statistic__logo-wrapper {
+  position: relative;
+}
+
+.statistic__logo-oval {
+  position: absolute;
+  margin-left: 30px;
+}
+
+.statistic__logo-round {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.statistic__logo-arrow {
+  height: 70px;
+}
+
+.statistic__logo-oval {
+  flex-direction: initial;
+}
+
+.statistic_activity-name-count {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.statistic_activity-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 4px;
+  padding-right: 8px;
+}
+
+.statistic_activity-count {
+  font-size: 12px;
+  background: #8bc34a;
+  border-radius: 10px;
+  padding: 4px;
+  color: white;
+}
+
+.statistic_activity {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #eff1f4;
+}
+.statistic_analytics {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #eff1f4;
+}
+
+.statistic_activity-wrapper {
+  display: grid;
+  grid-template-columns: max-content auto;
+  row-gap: 5px;
+  column-gap: 10px;
+  margin-bottom: 5px;
+  line-height: 28px;
+}
+
+.statistic_activity-now-count {
+  font-size: 20px;
+}
+
+.statistic_activity-past-count {
+  font-size: 20px;
+  color: #a0b0b9;
+}
+
+.statistic_activity-now-text {
+  font-size: 12px;
+}
+
+.statistic_activity-past-text {
+  font-size: 12px;
+  color: #a0b0b9;
+}
+
+.statistic_analytics-wrapper {
+  display: grid;
+  grid-template-columns: max-content auto;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 7px;
+}
+
+.statistic_analytics-mobile-text {
+  padding-right: 8px;
+}
+
+.statistic_analytics-info {
+  font-size: 12px;
+  color: #a0b0b9;
+  margin-bottom: 8px;
+}
+
+.statistic_analytics-link-wrapper {
+  display: flex;
+  font-size: 12px;
+}
+
+.statistic_analytics-link-text {
+  margin-right: 6px;
+}

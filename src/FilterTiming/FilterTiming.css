@@ -1,0 +1,39 @@
+.filter-timing {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  background-color: #ffffff;
+  grid-area: filter;
+  min-width: 502px;
+  width: 70%;
+  margin-bottom: 20px;
+  line-height: 32px;
+  border-radius: 5px;
+}
+
+.filter-timing__element {
+  width: calc(100% / 3);
+  text-align: center;
+  user-select: none;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+}
+
+.filter-timing__element:first-child {
+  border-left: none;
+}
+.filter-timing__element:last-child {
+  border-right: none;
+}
+
+.filter-timing__element:hover {
+  background-color: #6bb9f9;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.filter-timing__element_active {
+  background-color: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+}
