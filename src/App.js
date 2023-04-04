@@ -3,9 +3,10 @@ import './App.css';
 import FilterTiming from './FilterTiming/FilterTiming';
 import StackedBar from './StackedBar/StackedBar';
 import StatisticBlock from './StatisticBlock/StatisticBlock';
+import StatisticHeader from './StatisticHeader/StatisticHeader';
 import { LASTHOUR_FILTER_TYPE } from './FilterTiming/constsFilterTiming';
 import { serverResponse } from './api/API';
-import StatisticHeader from './StatisticHeader/StatisticHeader';
+import { InertiaProgress } from '@inertiajs/progress';
 
 function App() {
   const [filterTiming, setFilterTiming] = useState(LASTHOUR_FILTER_TYPE);
@@ -32,7 +33,12 @@ function App() {
       </div>
     );
   } else {
-    return <h1>Wait...</h1>;
+    return InertiaProgress.init({
+      delay: 0,
+      color: '#29d',
+      includeCSS: true,
+      showSpinner: false,
+    });
   }
 }
 

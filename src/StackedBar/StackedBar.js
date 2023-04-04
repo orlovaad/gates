@@ -56,7 +56,6 @@ function options(error) {
 }
 
 function StackedBar({ errorsData }) {
-  console.log(errorsData);
   return (
     <div>
       <CanvasJSChart options={options(errorsData.data)} />
